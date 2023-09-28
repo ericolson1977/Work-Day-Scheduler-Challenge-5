@@ -1,7 +1,7 @@
 var currentTime = $("#currentDay")
 
-// displays current date
-function displayTime() {
+//function to display current date
+function displayDate() {
   var rightNow = dayjs().format("dddd, MMM DD, YYYY");
   currentTime.text(rightNow);
 }
@@ -18,22 +18,19 @@ $(document).ready(function() {
     } else {
       $(this).addClass("future");
     } 
-    
+    // event listener for save button, this also saves task into local storage
     $('.time-block').on('click', '.saveBtn', function(event) {
       event.preventDefault();
       var task = $(this).siblings(".description").val();
       var key = $(this).parent().attr("id");
       localStorage.setItem(key, task);
-      // console.log('Button clicked!');
-      // console.log('User input:', task);
-      // console.log('Storage key:', key);
     });
-
+    //gets task from local storage so that the task persists after page refresh
     var storedTask = localStorage.getItem($(this).attr("id"));
     if (storedTask) {
       $(this).find(".description").val(storedTask);
     }
   });
 });
-
-displayTime();
+//calls function to disply the current date
+displayDate();

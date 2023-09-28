@@ -25,7 +25,7 @@
 //Create some sort of Timer Function - DONE
   //loop through each time block...based upon current time it will know if it is past present or future
 
-//Functionality for the SaveButton
+//Functionality for the SaveButton - DONE
 //Add event listneer, need to be able to store and remove user input from local storage 
 
-//On page reload or refresh...any input in local storage needs to be rendered to the correct hour 
+//On page reload or refresh...any input in local storage needs to be rendered to the correct hour - DONE
