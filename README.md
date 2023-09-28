@@ -12,6 +12,8 @@ N/A
 
 https://github.com/ericolson1977/Work-Day-Scheduler-Challenge-5
 
+https://ericolson1977.github.io/Work-Day-Scheduler-Challenge-5/
+
 ![Alt text](assets/images/_C__Users_eolso_Desktop_bootcamp_Challenges_Work-Day-Scheduler-Challenge-5_index.html.png)
 
 ## Credits
