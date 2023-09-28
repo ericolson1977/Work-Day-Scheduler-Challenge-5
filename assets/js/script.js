@@ -5,7 +5,7 @@ function displayDate() {
   var rightNow = dayjs().format("dddd, MMM DD, YYYY");
   currentTime.text(rightNow);
 }
-// removes past present futre classes and adds appropriate class basedon currect time
+// removes past present futre classes and adds appropriate class based on currect time
 $(document).ready(function() {
   var currentHour = dayjs().hour();
   $(".time-block").each(function() {
